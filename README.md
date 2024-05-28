@@ -18,6 +18,7 @@ To generate static HTML with assets from their source files is used the [html-bu
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/edit/parallax-3d-lens-effect?file=README.md)
 
 ## Setup
+
 ```
 git clone https://github.com/webdiscus/parallax-3d-lens-effect.git
 cd parallax-3d-lens-effect
@@ -25,16 +26,19 @@ npm i
 ```
 
 ## View app
+
 ```
 npm run view
 ```
 
 ## Start development
+
 ```
 npm start
 ```
 
 ## Build app
+
 ```
 npm run build
 ```

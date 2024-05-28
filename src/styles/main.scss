@@ -51,12 +51,12 @@ body {
 
 .layer-background {
   transform: translateZ(-55px) scale(1.06);
-  background-image: url(../images/background.jpg);
+  background-image: url(../images/OoklapeetsDesk.png);
 }
 
 .layer-1-ast {
   transform: translateZ(80px) scale(0.88);
-  background-image: url(../images/layer-1-ast.png);
+  background-image: url(../images/desk1.png);
 }
 
 .layer-2-main {
@@ -96,22 +96,47 @@ body {
   z-index: 1;
 }
 
-.main-content {
-  margin-top: calc(var(--ratio) * 5.5);
-  font-size: calc(var(--ratio) * 2.9);
-  letter-spacing: calc(var(--ratio) * -0.15);
-  line-height: 1.35em;
-  text-align: center;
-  text-transform: uppercase;
+// .main-content {
+//   margin-top: calc(var(--ratio) * 5.5);
+//   font-size: calc(var(--ratio) * 2.9);
+//   letter-spacing: calc(var(--ratio) * -0.15);
+//   line-height: 1.35em;
+//   text-align: center;
+//   text-transform: uppercase;
 
-  .subtitle {
-    font-size: calc(var(--ratio) * 1.2);
-    font-style: italic;
-    line-height: 3;
-    letter-spacing: normal;
-    text-transform: none;
-  }
+//   .subtitle {
+//     font-size: calc(var(--ratio) * 1.2);
+//     font-style: italic;
+//     line-height: 3;
+//     letter-spacing: normal;
+//     text-transform: none;
+//   }
+// }
+
+.main-content {
+  margin-top: calc(var(--ratio) * 1.5);
+  text-align: center; /* Central alignment might still be needed for the title/subtitle */
+  // text-transform: uppercase;
 }
+
+
+.content-boxes {
+  display: flex; /* Uses Flexbox to layout child elements side by side */
+  justify-content: space-between; /* Distributes space between the left and right boxes */
+  margin-top: 20px; /* Space between title and boxes */
+}
+
+.left-box, .right-box {
+  flex: 1; /* Each box will take up equal space */
+  padding: 20px; /* Padding inside each box */
+  border: 1px solid #ccc; /* Border for visual separation */
+  margin: 0 10px; /* Margin between boxes */
+  font-size: 9px;
+  text-transform: none; /* Overrides the uppercase transformation */
+  text-align: left; /* Aligns text to the left within each box */
+}
+
+
 
 span.block {
   display: block;
