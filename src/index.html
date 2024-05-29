@@ -1,36 +1,60 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>3D parallax effect</title>
-  <link href="./images/favicon.ico" rel="icon">
-  <link href="./styles/main.scss" rel="stylesheet">
-  <script src="./scripts/app.js" defer></script>
-</head>
-<body>
-  <div class="logo" style=""></div>
-
-  <section class="layers">
-    <div class="layers__container parallax">
-      <div class="layers__item layer-background"></div>
-      <div class="layers__item layer-1-ast"></div>
-      <div class="layers__item layer-2-main">
-        <div class="main-content">
-          <h1>3D parallax effect <span class="block">HTML / CSS</span></h1>
-          <div class="subtitle">Creating a beautiful 3D website with a ‘lens effect’</div>
-          <a href="https://github.com/webdiscus/parallax-3d-lens-effect">
-            <button class="btn btn-github">View on GitHub</button>
-          </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D parallax effect</title>
+    <link href="./images/favicon.ico" rel="icon" />
+    <link href="./styles/main.scss" rel="stylesheet" />
+    <script src="./scripts/app.js" defer></script>
+  </head>
+  <body>
+    <section class="layers">
+      <div class="layers__container parallax">
+        <div class="layers__item layer-background"></div>
+        <div class="layers__item layer-1-ast"></div>
+        <div class="layers__item layer-2-main">
+          <div class="main-content">
+            <div class="left">
+              <div class="content-div">
+                <h2>Halloo, I&apos;m Ooklapeet!</h2>
+                I&apos;m an NFT artist and the Creative Director for <a href="#" target="_blank"> FlabLab Labs</a>.
+              </div>
+              <div class="content-div">
+                In my real life, I&apos;m a gallery-repped artist. I&apos;ve performed and written comedy in Chicago and
+                Los Angeles at <a href="#" target="_blank">The Second City</a>,
+                <a href="#" target="_blank">The Groundlings</a>, and <a href="#" target="_blank">UCB</a>. I&apos;ve
+                written for <a href="#" target="_blank">Clickhole</a> and a few animated TV shows. (SAG/AFTRA, WGA)
+              </div>
+              <div class="content-div">
+                I really love making shit. I hope you enjoy it— (the aforementioned shit that is.)
+              </div>
+              <div class="signoff"><span class="span-content">Heart emoji, Ook</span></div>
+              <div class="upcoming-div">
+                <span class="upcoming">Upcoming</span> - 111 Ooklapeet! NFTs “Hello, World” Collection auction. May 31,
+                2024. (link soon.)
+              </div>
+            </div>
+            <!-- <h1>3D parallax effect <span class="block">HTML / CSS</span></h1> -->
+            <!-- <div class="subtitle">Creating a beautiful 3D website with a ‘lens effect’</div> -->
+            <div class="center">
+              <div class="logo" style=""></div>
+              <div class="socials">
+                <a href="https://github.com/webdiscus/parallax-3d-lens-effect">
+                  <button class="btn btn-github">View on GitHub</button>
+                </a>
+              </div>
+            </div>
+            <div class="right"></div>
+          </div>
         </div>
+        <div class="layers__item layer-3-rain">
+          <canvas class="rain"></canvas>
+        </div>
+        <div class="layers__item layer-4-leaves"></div>
+        <div class="layers__item layer-5-glow"></div>
       </div>
-      <div class="layers__item layer-3-rain">
-        <canvas class="rain"></canvas>
-      </div>
-      <div class="layers__item layer-4-leaves"></div>
-      <div class="layers__item layer-5-glow"></div>
-    </div>
-  </section>
-</body>
+    </section>
+  </body>
 </html>

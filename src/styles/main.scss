@@ -69,7 +69,8 @@ body {
 
 .layer-4-leaves {
   transform: translateZ(300px) scale(0.9);
-  background-image: url(../images/layer-4-leaves.png);
+  background-image: url(../images/rainbow.png);
+  opacity: 0.3;
 }
 
 .layer-5-glow {
@@ -85,9 +86,9 @@ body {
 }
 
 .logo {
-  position: absolute;
-  left: calc(51% - calc(var(--logo-size) / 2));
-  top: calc(var(--ratio) * 2.8);
+  // position: absolute;
+  // left: calc(51% - calc(var(--logo-size) / 2));
+  // top: calc(var(--ratio) * 2.8);
   width: var(--logo-size);
   height: var(--logo-size);
   background-image: url(../images/logo.svg);
@@ -113,34 +114,72 @@ body {
 //   }
 // }
 
+
+
+
 .main-content {
-  margin-top: calc(var(--ratio) * 1.5);
-  text-align: center; /* Central alignment might still be needed for the title/subtitle */
-  // text-transform: uppercase;
+  display: flex;          /* Use flexbox layout */
+  height: 100vh;          /* Full viewport height */
+  width: 100vw;           /* Full viewport width */
+  margin: 0;              /* Remove default margin */
+  justify-content: space-between; /* Space out columns */
 }
 
-
-.content-boxes {
-  display: flex; /* Uses Flexbox to layout child elements side by side */
-  justify-content: space-between; /* Distributes space between the left and right boxes */
-  margin-top: 20px; /* Space between title and boxes */
+.content-div, .upcoming-div{
+  padding-bottom: 10px;
+  font-size: medium;
+  padding-left: 20%;
+}
+span.span-content{
+  font-weight: bold;
+  padding-bottom: 25px;
+}
+.left{flex-direction: column;}
+.left, .right, .center{
+  flex: 1;                /* Each flex item takes equal width */
+  display: flex;          /* Also make each item a flex container */
+  justify-content: center;/* Center content horizontally */
+  align-items: center;    /* Center content vertically */       
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Aligns one item at the top and one at the bottom */
+  align-items: center; /* Centers the items horizontally */
+  height: 100vh; /* Takes full height of the parent, which is .main-content */
 }
 
-.left-box, .right-box {
-  flex: 1; /* Each box will take up equal space */
-  padding: 20px; /* Padding inside each box */
-  border: 1px solid #ccc; /* Border for visual separation */
-  margin: 0 10px; /* Margin between boxes */
-  font-size: 9px;
-  text-transform: none; /* Overrides the uppercase transformation */
-  text-align: left; /* Aligns text to the left within each box */
+ .logo{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 20px;
+ }
+ .socials{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 20px;
+ }
+.upcoming-div{
+  padding-top: 50px;;
+}
+span.upcoming{
+  font-weight: bold;
+  font-style: italic;
+}
+a{
+  font-weight: bold;
+  font-style: italic;
+  color: #eca30e;
+  text-decoration: none;
+}
+a:hover{
+  transition: all 0.3s;
+  color: #89d65b;
+  
 }
 
-
-
-span.block {
-  display: block;
-}
 
 .btn {
   font-weight: 600;
@@ -162,4 +201,34 @@ span.block {
 
 .btn-github {
   margin-top: calc(var(--ratio) * 2.5);
+}
+
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column; /* Stack flex items vertically */
+  }
+
+  .left, .center, .right {
+    width: 100%; /* Each child takes full width */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    padding: 20px 0; /* Add some vertical padding for spacing */
+  }
+  .content-div, .upcoming-div {
+    padding-left: 0px;
+    margin: 0 10%;
+}
+  .center {
+    order: -1; /* Places center on top */
+  }
+
+  .left {
+    order: 1; /* Places left in the middle */
+  }
+
+  .right {
+    order: 0; /* Places right on the bottom */
+  }
 }
