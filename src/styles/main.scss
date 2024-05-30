@@ -180,16 +180,19 @@ a:hover{
   
 }
 
+.twitter{
+  font-size: x-small;
+  text-align: center;
+}
 
 .btn {
-  font-weight: 600;
-  font-size: calc(var(--ratio) * 0.71);
-  padding: calc(var(--ratio) * 0.7) calc(var(--ratio) * 1.25);
-  letter-spacing: -0.02vw;
-  border-radius: 10em;
-  border: rgb(255 255 255 / 0.4) 3px solid;
+  font-weight: 100;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 27px;
+  border: rgba(255,255,255,.4) 2px solid;
   color: #fff;
-  background-color: transparent;
+  background-color: rgba(0,0,0,0);
   text-transform: uppercase;
   outline: none;
   cursor: pointer;
@@ -198,7 +201,12 @@ a:hover{
     background-color: rgb(255 255 255 / 0.2);
   }
 }
-
+.svg-inline--fa {
+  display: var(--fa-display,inline-block);
+  height: 2em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
 .btn-github {
   margin-top: calc(var(--ratio) * 2.5);
 }

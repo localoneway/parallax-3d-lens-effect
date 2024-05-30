@@ -39,6 +39,13 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.(mp4|webm)$/,
+        type: 'asset/resource',
+        generator: {
+          filename: 'videos/[name].[hash:8][ext]',
+        },
+      },
+      {
         test: /\.(css|sass|scss)$/,
         use: ['css-loader', 'sass-loader'],
       },
