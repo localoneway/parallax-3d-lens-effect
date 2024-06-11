@@ -13,19 +13,3 @@ rain.animate();
 
 // enable parallax
 parallax({ smoothMove: 1 });
-
-
-import videoSrc from '../images/OoklapeetReel.mp4';
-
-document.addEventListener('DOMContentLoaded', () => {
-    const videoContainer = document.getElementById('video-container');
-    const videoElement = document.createElement('video');
-
-    videoElement.src = videoSrc; // URL handled by Webpack
-    videoElement.controls = true;
-    videoElement.width = 640;
-    videoElement.height = 360;
-    videoElement.play();
-
-    videoContainer.appendChild(videoElement);
-});

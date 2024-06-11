@@ -143,6 +143,9 @@ span.span-content{
   justify-content: center;/* Center content horizontally */
   align-items: center;    /* Center content vertically */       
 }
+#video-container > iframe{
+  border: none;
+}
 .center {
   display: flex;
   flex-direction: column;
