@@ -9,7 +9,7 @@
   --rotate-x: 0;
   --ratio: calc(1vw + 1vh);
   --transition: 1.5s cubic-bezier(0.05, 0.5, 0, 1);
-  --logo-size: calc(var(--ratio) * 7.8);
+  --logo-size: calc(var(--ratio) * 12.8);
 }
 
 body {
@@ -88,10 +88,11 @@ body {
 .logo {
   // position: absolute;
   // left: calc(51% - calc(var(--logo-size) / 2));
-  // top: calc(var(--ratio) * 2.8);
+  // top: calc(var(--ratio) * 5.8);
+  margin-top: 40px;
   width: var(--logo-size);
   height: var(--logo-size);
-  background-image: url(../images/logo.svg);
+  background-image: url(../images/logo.png);
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 1;
@@ -133,6 +134,7 @@ body {
 span.span-content{
   font-weight: bold;
   padding-bottom: 25px;
+  padding-top: 25px;
 }
 .left{flex-direction: column;}
 .left, .right, .center{

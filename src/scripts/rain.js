@@ -137,7 +137,7 @@ class Rain {
         thickness: random(thicknessMin, thicknessMax - 1) + random(1, 9) / 10,
         velocityX: velocityX,
         velocityY: velocityY,
-        opacity: Math.random() * 0.35,
+        opacity: Math.random() * 0.85,
       })
     );
   }

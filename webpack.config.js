@@ -42,7 +42,7 @@ module.exports = {
         test: /\.(mp4|webm)$/,
         type: 'asset/resource',
         generator: {
-          filename: 'videos/[name].[hash:8][ext]',
+          filename: 'videos/[name][ext]' // This should output videos to the 'dist/videos' folder
         },
       },
       {
