@@ -130,6 +130,13 @@ body {
   padding-bottom: 10px;
   font-size: medium;
   padding-left: 20%;
+  justify-content: flex-start;
+}
+.content-div2{
+  padding-bottom: 10px;
+  font-size: medium;
+  padding-left: 0%;
+  justify-content: flex-start;
 }
 span.span-content{
   font-weight: bold;
@@ -137,7 +144,13 @@ span.span-content{
   padding-top: 25px;
 }
 .left{flex-direction: column;}
-.left, .right, .center{
+.left{
+  flex: 1;                /* Each flex item takes equal width */
+  display: flex;          /* Also make each item a flex container */
+  justify-content: center;/* Center content horizontally */
+  // align-items: center;    /* Center content vertically */       
+}
+.right, .center{
   flex: 1;                /* Each flex item takes equal width */
   display: flex;          /* Also make each item a flex container */
   justify-content: center;/* Center content horizontally */

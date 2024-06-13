@@ -60,7 +60,7 @@ class Rain {
    * @param {Number} amount Initial amount of drops.
    * @param {Number} interval Time interval for adding new drops in milliseconds.
    */
-  constructor({ size = [2, 10], thickness = [1, 2], speed = [2, 20], amount = 140, interval = 100 } = {}) {
+  constructor({ size = [2, 10], thickness = [1, 2], speed = [2, 20], amount = 340, interval = 30 } = {}) {
     const [sizeMin, sizeMax] = size;
     const [speedMin, speedMax] = speed;
     const [thicknessMin, thicknessMax] = thickness;
@@ -82,7 +82,7 @@ class Rain {
 
     // Add new drops at regular intervals
     setInterval(() => {
-      this.addRandomDrop();
+      this.addDropFromCenter();
     }, interval);
   }
 
