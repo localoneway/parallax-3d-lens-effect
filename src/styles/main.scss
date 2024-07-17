@@ -251,6 +251,7 @@ a:hover{
   .logo{height: 80px;}
   .main-content {
     flex-direction: column; /* Stack flex items vertically */
+    overflow-y: auto;
   }
 
   .btn {padding: 7px; margin: 7px;}
