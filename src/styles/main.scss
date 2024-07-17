@@ -128,7 +128,7 @@ body {
 
 .main-content {
   display: flex;          /* Use flexbox layout */
-  
+  height: 100%;          /* Full viewport height */
   width: 100vw;           /* Full viewport width */
   margin: 0;              /* Remove default margin */
   justify-content: space-between; /* Space out columns */
