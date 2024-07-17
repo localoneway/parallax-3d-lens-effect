@@ -133,6 +133,7 @@ body {
   margin: 0;              /* Remove default margin */
   justify-content: space-between; /* Space out columns */
   padding: 0 10px;
+  overflow-y: auto;  /* Allows scrolling when content overflows */
 }
 
 .content-div, .upcoming-div{
