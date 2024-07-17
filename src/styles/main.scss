@@ -257,6 +257,7 @@ a:hover{
 
   .left, .center, .right {
     width: 100%; /* Each child takes full width */
+    height: 100%;
     justify-content: center; /* Center content horizontally */
     align-items: center; /* Center content vertically */
     padding: 0px 0; /* Add some vertical padding for spacing */
