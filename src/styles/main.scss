@@ -128,7 +128,7 @@ body {
 
 .main-content {
   display: flex;          /* Use flexbox layout */
-  height: 100vh;          /* Full viewport height */
+  
   width: 100vw;           /* Full viewport width */
   margin: 0;              /* Remove default margin */
   justify-content: space-between; /* Space out columns */
@@ -191,7 +191,7 @@ span.span-content{
  }
 
 .upcoming-div{
-  padding-top: 50px;;
+  padding-top: 50px;
 }
 span.upcoming{
   font-weight: bold;
@@ -260,6 +260,7 @@ a:hover{
     align-items: center; /* Center content vertically */
     padding: 0px 0; /* Add some vertical padding for spacing */
   }
+  .upcoming-div{padding-top: 5px;}
   .content-div, .upcoming-div {
     padding-left: 0px;
     margin: 0 10%;
@@ -280,5 +281,5 @@ a:hover{
     order: 0; /* Places right on the bottom */
   }
   .span-content{padding: 0px;}
-  .upcoming-div{padding-top: 5px;}
+  .spacer{height: 20px;}
 }
