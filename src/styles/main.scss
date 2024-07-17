@@ -129,12 +129,11 @@ body {
 
 .main-content {
   display: flex;          /* Use flexbox layout */
-  height: 100%;          /* Full viewport height */
+  height: 100vh;          /* Full viewport height */
   width: 100vw;           /* Full viewport width */
   margin: 0;              /* Remove default margin */
   justify-content: space-between; /* Space out columns */
   padding: 0 10px;
- overflow-y: auto;
 }
 
 .content-div, .upcoming-div{
@@ -251,7 +250,7 @@ a:hover{
   .logo{height: 80px;}
   .main-content {
     flex-direction: column; /* Stack flex items vertically */
-    overflow-y: auto;
+    height: 100%;
   }
 
   .btn {padding: 7px; margin: 7px;}
@@ -285,7 +284,11 @@ a:hover{
   }
   .span-content{padding: 0px;}
   .spacer{height: 20px;}
-  .layers__container{
-    height: 100%; overflow-y: auto;
-  }
+   .layers__container{
+   overflow-y: auto;
+   }
+   .parallax{ transform-style: flat;
+    transform: none;
+    transition: none;
+    will-change: auto;}
 }
