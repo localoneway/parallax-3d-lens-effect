@@ -133,7 +133,7 @@ body {
   margin: 0;              /* Remove default margin */
   justify-content: space-between; /* Space out columns */
   padding: 0 10px;
-  overflow-y: auto;  /* Allows scrolling when content overflows */
+ 
 }
 
 .content-div, .upcoming-div{
@@ -250,6 +250,7 @@ a:hover{
   .logo{height: 80px;}
   .main-content {
     flex-direction: column; /* Stack flex items vertically */
+    overflow-y: auto;  /* Allows scrolling when content overflows */
   }
 
   .btn {padding: 7px; margin: 7px;}
