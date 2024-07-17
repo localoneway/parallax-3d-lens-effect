@@ -13,10 +13,18 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
   color: #fff;
   background-color: #000;
+  font-family: 'Marion', serif;
 }
+
+@font-face {
+  font-family: 'Marion', serif;
+  src: url('./fonts/Marion Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 // 3D parallax effect
 .parallax {
@@ -124,6 +132,7 @@ body {
   width: 100vw;           /* Full viewport width */
   margin: 0;              /* Remove default margin */
   justify-content: space-between; /* Space out columns */
+  padding: 0 10px;
 }
 
 .content-div, .upcoming-div{
@@ -175,10 +184,11 @@ span.span-content{
  }
  .socials{
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding-top: 20px;
+  // justify-content: flex-end;
+  // align-items: center;
+  // padding-top: 20px;
  }
+
 .upcoming-div{
   padding-top: 50px;;
 }
@@ -187,7 +197,7 @@ span.upcoming{
   font-style: italic;
 }
 a{
-  font-weight: bold;
+  // font-weight: bold;
   font-style: italic;
   color: #eca30e;
   text-decoration: none;
@@ -203,11 +213,12 @@ a:hover{
   text-align: center;
 }
 
+
 .btn {
   font-weight: 100;
   padding: 10px;
   margin: 10px;
-  border-radius: 27px;
+  border-radius: 50%;
   border: rgba(255,255,255,.4) 2px solid;
   color: #fff;
   background-color: rgba(0,0,0,0);
@@ -224,14 +235,18 @@ a:hover{
   height: 2em;
   overflow: visible;
   vertical-align: -0.125em;
+  min-width: 30px;
 }
 .btn-github {
   margin-top: calc(var(--ratio) * 2.5);
 }
 
+.video-container{position: relative; width: 100%; min-height: 350px;}
+
 
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
+  .logo{height: 50px;}
   .main-content {
     flex-direction: column; /* Stack flex items vertically */
   }
@@ -240,7 +255,7 @@ a:hover{
     width: 100%; /* Each child takes full width */
     justify-content: center; /* Center content horizontally */
     align-items: center; /* Center content vertically */
-    padding: 20px 0; /* Add some vertical padding for spacing */
+    padding: 0px 0; /* Add some vertical padding for spacing */
   }
   .content-div, .upcoming-div {
     padding-left: 0px;
@@ -248,13 +263,17 @@ a:hover{
 }
   .center {
     order: -1; /* Places center on top */
+   
   }
 
   .left {
     order: 1; /* Places left in the middle */
+    align-items: flex-start;
   }
 
   .right {
     order: 0; /* Places right on the bottom */
   }
+  .span-content{padding: 0px;}
+  .upcoming-div{padding-top: 5px;}
 }
