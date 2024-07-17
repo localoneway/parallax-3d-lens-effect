@@ -247,42 +247,14 @@ a:hover{
 
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
-
-
-  .parallax {
-    transform-style: flat;
-    transform: none;
-    transition: none;
-    will-change: auto;
+    .parallax, .layers, .layers__container, .layers__item {
+      transform: none;
+      // position: relative;
+      height: auto;
+      overflow: visible;
+    
   }
-
-  .layers {
-    perspective: none;
-    overflow: visible; /* Make overflow visible to allow normal scrolling */
-  }
-
-  .layers__container {
-    height: auto; /* Remove fixed height to allow content to expand */
-    min-height: 0; /* Reset min-height */
-  }
-
-  .layers__item {
-    position: relative; /* Switch from absolute to relative */
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
-
-  /* Reset transformations for all layers */
-  .layer-background,
-  .layer-1-ast,
-  .layer-2-main,
-  .layer-3-rain,
-  .layer-4-leaves,
-  .layer-5-glow {
-    transform: none;
-  }
+  
 
   .logo{height: 80px;}
   .main-content {
