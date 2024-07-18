@@ -74,6 +74,7 @@ body {
 
 .layer-3-rain {
   transform: translateZ(190px) scale(0.9);
+  transform: none;
 }
 
 .layer-4-leaves {
@@ -242,11 +243,14 @@ a:hover{
   margin-top: calc(var(--ratio) * 2.5);
 }
 
-.video-container{position: relative; width: 100%; min-height: 350px;}
+.video-container{position: relative; width: 100%; min-height: 350px; right: 20px;}
 
-
+.mobile{display: none;}
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
+    .video-container{right: 0;}
+    .mobile{display: flex;}
+    .desktop{display: none;}
     .parallax, .layers, .layers__container, .layers__item {
       transform: none;
       // position: relative;
@@ -256,7 +260,7 @@ a:hover{
   }
   .layers__container{min-height: 1000px;}
 
-  .logo{height: 80px;}
+  .logo{height: 100%; width: 90%;}
   .main-content {
     flex-direction: column; /* Stack flex items vertically */
     height: 100%;
@@ -291,6 +295,8 @@ a:hover{
 
   .right {
     order: 0; /* Places right on the bottom */
+    top: -25px;
+    position: relative;
   }
   .span-content{padding: 0px;}
   .spacer{height: 20px;}
